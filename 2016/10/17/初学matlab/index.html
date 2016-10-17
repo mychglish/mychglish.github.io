@@ -3,24 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Handler学习心得 | 文婆老男票的博客</title>
+  <title>初学matlab | 文婆老男票的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Android在设计的时候，就封装了一套消息创建、传递、处理机制，如果不遵循这样的机制，就没有办法更新UI信息，就会抛出异常。我们必须在UI线程中更新UI。
-handler是android给我们提供用来更新UI的一套机制，也是一套消息处理机制，我们可以发送消息，也可以通过它处理消息。
-程序使用Handler发送信息，被Handler发送的消息必须被送到指定的MessageQueue。也就是说，如果">
+  <meta name="description" content="matlab中的函数atan2和atan的区别：atan的参数为一个数；而atan2的参数为一个点的坐标；atan2(y,x)；y为纵坐标，x为横坐标；rand()的作用是随机取一个数或者一个矩阵；mean(u,n)的作用是计算数组的平均值（arg），其中u为一个数组，n为数组的长度；length(u),u为一个数组或矩阵，该函数计算的就是u的长度；">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Handler学习心得">
-<meta property="og:url" content="http://yoursite.com/2016/07/22/Handler学习心得/index.html">
+<meta property="og:title" content="初学matlab">
+<meta property="og:url" content="http://yoursite.com/2016/10/17/初学matlab/index.html">
 <meta property="og:site_name" content="文婆老男票的博客">
-<meta property="og:description" content="Android在设计的时候，就封装了一套消息创建、传递、处理机制，如果不遵循这样的机制，就没有办法更新UI信息，就会抛出异常。我们必须在UI线程中更新UI。
-handler是android给我们提供用来更新UI的一套机制，也是一套消息处理机制，我们可以发送消息，也可以通过它处理消息。
-程序使用Handler发送信息，被Handler发送的消息必须被送到指定的MessageQueue。也就是说，如果">
-<meta property="og:updated_time" content="2016-07-22T03:16:03.602Z">
+<meta property="og:description" content="matlab中的函数atan2和atan的区别：atan的参数为一个数；而atan2的参数为一个点的坐标；atan2(y,x)；y为纵坐标，x为横坐标；rand()的作用是随机取一个数或者一个矩阵；mean(u,n)的作用是计算数组的平均值（arg），其中u为一个数组，n为数组的长度；length(u),u为一个数组或矩阵，该函数计算的就是u的长度；">
+<meta property="og:updated_time" content="2016-10-17T02:06:03.222Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Handler学习心得">
-<meta name="twitter:description" content="Android在设计的时候，就封装了一套消息创建、传递、处理机制，如果不遵循这样的机制，就没有办法更新UI信息，就会抛出异常。我们必须在UI线程中更新UI。
-handler是android给我们提供用来更新UI的一套机制，也是一套消息处理机制，我们可以发送消息，也可以通过它处理消息。
-程序使用Handler发送信息，被Handler发送的消息必须被送到指定的MessageQueue。也就是说，如果">
+<meta name="twitter:title" content="初学matlab">
+<meta name="twitter:description" content="matlab中的函数atan2和atan的区别：atan的参数为一个数；而atan2的参数为一个点的坐标；atan2(y,x)；y为纵坐标，x为横坐标；rand()的作用是随机取一个数或者一个矩阵；mean(u,n)的作用是计算数组的平均值（arg），其中u为一个数组，n为数组的长度；length(u),u为一个数组或矩阵，该函数计算的就是u的长度；">
   
     <link rel="alternate" href="/atom.xml" title="文婆老男票的博客" type="application/atom+xml">
   
@@ -69,16 +63,12 @@ handler是android给我们提供用来更新UI的一套机制，也是一套消�
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Handler学习心得" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-初学matlab" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/07/22/Handler学习心得/" class="article-date">
-  <time datetime="2016-07-22T01:42:54.000Z" itemprop="datePublished">2016-07-22</time>
+    <a href="/2016/10/17/初学matlab/" class="article-date">
+  <time datetime="2016-10-17T01:47:04.000Z" itemprop="datePublished">2016-10-17</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/android/">android</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -87,7 +77,7 @@ handler是android给我们提供用来更新UI的一套机制，也是一套消�
         
   
     <h1 class="article-title" itemprop="name">
-      Handler学习心得
+      初学matlab
     </h1>
   
 
@@ -95,39 +85,24 @@ handler是android给我们提供用来更新UI的一套机制，也是一套消�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Android在设计的时候，就封装了一套消息创建、传递、处理机制，如果不遵循这样的机制，就没有办法更新UI信息，就会抛出异常。我们必须在UI线程中更新UI。</p>
-<p>handler是android给我们提供用来更新UI的一套机制，也是一套消息处理机制，我们可以发送消息，也可以通过它处理消息。</p>
-<p>程序使用Handler发送信息，被Handler发送的消息必须被送到指定的<strong>MessageQueue</strong>。也就是说，如果希望Handler正常工作，必须在当前线程中有一个<strong>MessageQueue</strong>，否则消息就没有<strong>MessageQueue</strong>进行保存了。不过<strong>MessageQueue</strong>是有<strong>Looper</strong>负责管理的，也就是说，如果希望Handler正常工作，必须在当前线程中有一个<strong>Looper</strong>对象。为了保证当前线程中有<strong>Looper</strong>对象，可以分下列两种情况：<br>1.UI线程中，系统已经初始化了一个<strong>Looper</strong>对象，因此程序直接创建Handler即可，然后就可以通过Hnadler来发送或者处理消息。<br>2.程序猿自己启动子线程，程序猿必须自己创建一个<strong>Looper</strong>对象，并启动它。创建<strong>Looper</strong>对象调用它的prepare()方法即可。prepare()方法保证每个线程中只有一个<strong>Looper</strong>对象。</p>
-<p>说到这就不得不提下前面说得到的<strong>Looper</strong>、<strong>MessageQueue</strong>了：<br>1.<strong>MessageQueue</strong>:消息队列，由Looper负责管理，它采用先进先出的方式来管理Message。<br>2.<strong>Looper</strong>:消息泵，不断地从<strong>MessageQueue</strong>中抽取Message执行。因此,每个线程只能拥有一个<strong>Looper</strong>。它的loop方法负责读取<strong>MessageQueue</strong>中的消息，读到消息后就把消息交给发送该消息的Handler进行处理。</p>
-<p>总而言之：<strong>Handler</strong>负责发送消息，<strong>Looper</strong>负责接收handler发送的消息，并直接把消息回传个handler自己，<strong>MessageQueue</strong>就是一个存储信息的容器</p>
-
+        <p></p><h1>matlab中的函数<h1><br>atan2和atan的区别：<br>atan的参数为一个数；而atan2的参数为一个点的坐标；atan2(y,x)；y为纵坐标，x为横坐标；<br>rand()的作用是随机取一个数或者一个矩阵；<br>mean(u,n)的作用是计算数组的平均值（arg），其中u为一个数组，n为数组的长度；<br>length(u),u为一个数组或矩阵，该函数计算的就是u的长度；<p></p>
+</h1></h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/22/Handler学习心得/" data-id="ciudf6fw80008lkwfqweid8lw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/10/17/初学matlab/" data-id="ciudf6fsc0000lkwf3mqtpumx" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Handler/">Handler</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2016/07/23/浅尝JSON不辄止/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          浅尝JSON不辄止
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/07/21/Android-developer-GDp/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/08/07/致自己/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Android_developer_GDp</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>
